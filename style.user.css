@@ -29,7 +29,6 @@ url-prefix("http://127.0.0.1:7396") {
         display: none;
         opacity: 1;
         background: rgb(34, 34, 34) none repeat scroll 0% 0%;
-        padding: 30% 0px;
     }
     #loading {
         color: white;
@@ -189,8 +188,11 @@ url-prefix("http://127.0.0.1:7396") {
         border: 0;
         background: #222;
     }
-    .ui-dialog .ui-widget-content,
     .ui-dialog .ui-dialog-title {
+        color: white;
+        width: 100%;
+    }
+    .ui-dialog .ui-widget-content {
         color: white;
     }
     .ui-dialog .ui-widget-content h2 {
