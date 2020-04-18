@@ -7,339 +7,341 @@
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-FoldingAtHome/master/style.user.css
 @license       CC-BY-SA-4.0
 ==/UserStyle== */
-@-moz-document url("https://client.foldingathome.com"), domain("127.0.0.1") {
-/*
-Dependency
-Folding@Home Client Light by Mondanzo (https://userstyles.org/styles/181613/folding-home-client-light)
-*/
-#cp.panel {
-    border: none;
-    box-shadow: none;
-    width: auto;
-    border-radius: 0;
-    padding-bottom: 4px;
+@-moz-document url("https://client.foldingathome.com"),
+domain("127.0.0.1") {
+    /*
+        Dependency
+        Folding@Home Client Light by Mondanzo (https://userstyles.org/styles/181613/folding-home-client-light)
+    */
+    #cp.panel {
+        border: none;
+        box-shadow: none;
+        width: auto;
+        border-radius: 0;
+        padding-bottom: 4px;
+    }
+
+    #cp #menu {
+        margin: 0 25px;
+        width: 95%;
+    }
+
+    a.btn {
+        border-radius: 0;
+        height: 100%;
+    }
+
+    .td.right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        background-color: #e4e4e9;
+        width: auto;
+    }
+
+    body {
+        background: #eeeeee;
+    }
+
+    .box-pu li {
+        border-radius: 0;
+    }
+
+    #slots.row.panel-pu {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #slots.row.panel-pu ul {
+        width: 100%;
+        display: flex;
+    }
+
+    #slots.row.panel-pu li {
+        background: #e4e4e4;
+        margin-left: 8px;
+    }
+
+    #slots.row.panel-pu li:last-child {
+        margin-right: 8px;
+    }
+
+    #slots.row.panel-pu li.active {
+        background: #fff;
+    }
+
+    #btn-stop {
+        border-radius: 0;
+        border: none;
+        background: #c55;
+    }
+
+    .box-pu li .circle {
+        border-radius: 50%;
+        border: none;
+    }
+
+    .box-pu li .circle.pause {
+        background: #fcfc3c;
+    }
+
+    .box-pu li .circle.run {
+        background: #4c4;
+    }
+
+    .sbHolder,
+    .sbSelector {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .ui-widget-header {
+        background-image: none !important;
+        background-color: #5af !important;
+        border: none;
+        border-radius: 0;
+    }
+
+    .ui-progressbar .ui-progressbar-value {
+        margin: 0;
+    }
+
+    .ui-widget-content {
+        border: solid 1px #ccc;
+        border-radius: 0;
+    }
+
+    .ui-slider-horizontal {
+        background: #f90 !important;
+    }
+
+    .ui-slider .ui-slider-handle {
+        background-image: none !important;
+        border: solid 1px #000 !important;
+        border-radius: 5px;
+        background-color: #000 !important;
+        width: 6px;
+        margin-left: -4.5px !important;
+        height: 25px;
+    }
+
+    .ui-slider .ui-slider-handle:hover,
+    .ui-slider .ui-slider-handle:focus {
+        background-image: none !important;
+        border: solid 1px #222 !important;
+        border-radius: 5px;
+        background-color: #222 !important;
+        cursor: pointer;
+    }
+
+    .radio-selector span {
+        background-image: none !important;
+        border-radius: 0;
+        border: solid 1px #ccc;
+    }
+
+    .radio-selector li input[type="radio"]:checked + label span {
+        color: #000;
+    }
+
+    .radio-selector li input[type="radio"]:checked + label span::after {
+        content: "✓";
+        font-size: 1.6em;
+        margin: -2px 4px 4px;
+    }
 }
 
-#cp #menu {
-    margin: 0 25px;
-    width: 95%;
-}
-
-a.btn {
-    border-radius: 0;
-    height: 100%;
-}
-
-.td.right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header {
-    background-color: #e4e4e9;
-    width: auto;
-}
-
-body {
-    background: #eeeeee;
-}
-
-.box-pu li {
-    border-radius: 0;
-}
-
-#slots.row.panel-pu {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#slots.row.panel-pu ul {
-    width: 100%;
-    display: flex;
-}
-
-#slots.row.panel-pu li {
-    background: #e4e4e4;
-    margin-left: 8px;
-}
-
-#slots.row.panel-pu li:last-child {
-    margin-right: 8px;
-}
-
-#slots.row.panel-pu li.active {
-    background: #fff;
-}
-
-#btn-stop {
-    border-radius: 0;
-    border: none;
-    background: #c55;
-}
-
-.box-pu li .circle {
-    border-radius: 50%;
-    border: none;
-}
-
-.box-pu li .circle.pause {
-    background: #fcfc3c;
-}
-
-.box-pu li .circle.run {
-    background: #4c4;
-}
-
-.sbHolder,
-.sbSelector {
-    box-shadow: none;
-    border-radius: 0;
-}
-
-.ui-widget-header {
-    background-image: none !important;
-    background-color: #5af !important;
-    border: none;
-    border-radius: 0;
-}
-
-.ui-progressbar .ui-progressbar-value {
-    margin: 0;
-}
-
-.ui-widget-content {
-    border: solid 1px #ccc;
-    border-radius: 0;
-}
-
-.ui-slider-horizontal {
-    background: #f90 !important;
-}
-
-.ui-slider .ui-slider-handle {
-    background-image: none !important;
-    border: solid 1px #000 !important;
-    border-radius: 5px;
-    background-color: #000 !important;
-    width: 6px;
-    margin-left: -4.5px !important;
-    height: 25px;
-}
-
-.ui-slider .ui-slider-handle:hover,
-.ui-slider .ui-slider-handle:focus {
-    background-image: none !important;
-    border: solid 1px #222 !important;
-    border-radius: 5px;
-    background-color: #222 !important;
-    cursor: pointer;
-}
-
-.radio-selector span {
-    background-image: none !important;
-    border-radius: 0;
-    border: solid 1px #ccc;
-}
-
-.radio-selector li input[type="radio"]:checked + label span {
-    color: #000;
-}
-
-.radio-selector li input[type="radio"]:checked + label span::after {
-    content: "✓";
-    font-size: 1.6em;
-    margin: -2px 4px 4px;
-}
-}
-
-@-moz-document url("https://client.foldingathome.org/"), url-prefix("http://127.0.0.1:7396") {
-/*
+@-moz-document url("https://client.foldingathome.org/"),
+url-prefix("http://127.0.0.1:7396") {
+    /*
 		Dark Folding@Home (2020-04-18)
 
 		Repository: https://github.com/CustomStyles/Dark-FoldingAtHome
 					You are free to contribute or report any problems with the style.
 		License:	https://creativecommons.org/licenses/by-sa/4.0/
-*/
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-body,
-.header {
-    background: #222;
-}
-#overlay {
-    display: none;
-    opacity: 1;
-    background: rgb(34, 34, 34) none repeat scroll 0% 0%;
-    padding: 30% 0px;
-}
-#loading {
-    color: white;
-}
-#loading #throbber img {
-    filter: invert(0.9);
-}
-#menu {
-    color: #ddd;
-}
-.footer,
-#menu td.middle {
-    display: none;
-}
-a {
-    color: #c03;
-}
-a.btn:hover {
-    background: #222;
-}
-a.btn {
-    padding: 0.25em 0.5em;
-}
+    */
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    body,
+    .header {
+        background: #222;
+    }
+    #overlay {
+        display: none;
+        opacity: 1;
+        background: rgb(34, 34, 34) none repeat scroll 0% 0%;
+        padding: 30% 0px;
+    }
+    #loading {
+        color: white;
+    }
+    #loading #throbber img {
+        filter: invert(0.9);
+    }
+    #menu {
+        color: #ddd;
+    }
+    .footer,
+    #menu td.middle {
+        display: none;
+    }
+    a {
+        color: #c03;
+    }
+    a.btn:hover {
+        background: #222;
+    }
+    a.btn {
+        padding: 0.25em 0.5em;
+    }
 
-#cp .panel-header,
-#cp .panel-top,
-#cp .panel-pu,
-#slots.row.panel-pu li {
-    background: #2d2d2d;
-}
-#cp .panel-header {
-    padding: 1em 0;
-}
-#slots.row.panel-pu li.active {
-    background: #333;
-    border-radius: 25px 25px 0 0;
-}
-.ui-progressbar {
-    border: none;
-    border-radius: 1em;
-    background: #444;
-}
-.ui-progressbar .ui-progressbar-value {
-    color: white;
-    font-size: small;
-    line-height: 1.175;
-    padding: 0;
-    text-indent: 5px;
-}
-#cp.panel {
-    background: #333;
-    color: white;
-    flex: 1;
-    margin: 0;
-}
-#cp .hlarge {
-    color: #db003e;
-}
-.box-pu li .pu .pu-type {
-    color: #ccc;
-}
-.box-pu li .circle.run {
-    background: #2b2;
-}
-.box-pu li .circle.finish {
-    background: #db0;
-}
-.box-pu li .circle.pause {
-    background: #d40;
-}
-.box-pu li .run span,
-.box-pu li .finish span {
-    filter: grayscale(1);
-}
-.sbOptions,
-.sbSelector {
-    background-color: #3a3a3a;
-    color: white;
-    filter: grayscale(1);
-}
-.sbOptions a:hover,
-.sbOptions a:focus,
-.sbOptions a.sbFocus {
-    background: #444;
-}
-.sbOptions a:link,
-.sbOptions a:visited {
-    color: white;
-}
+    #cp .panel-header,
+    #cp .panel-top,
+    #cp .panel-pu,
+    #slots.row.panel-pu li {
+        background: #2d2d2d;
+    }
+    #cp .panel-header {
+        padding: 1em 0;
+    }
+    #slots.row.panel-pu li.active {
+        background: #333;
+        border-radius: 25px 25px 0 0;
+    }
+    .ui-progressbar {
+        border: none;
+        border-radius: 1em;
+        background: #444;
+    }
+    .ui-progressbar .ui-progressbar-value {
+        color: white;
+        font-size: small;
+        line-height: 1.175;
+        padding: 0;
+        text-indent: 5px;
+    }
+    #cp.panel {
+        background: #333;
+        color: white;
+        flex: 1;
+        margin: 0;
+    }
+    #cp .hlarge {
+        color: #db003e;
+    }
+    .box-pu li .pu .pu-type {
+        color: #ccc;
+    }
+    .box-pu li .circle.run {
+        background: #2b2;
+    }
+    .box-pu li .circle.finish {
+        background: #db0;
+    }
+    .box-pu li .circle.pause {
+        background: #d40;
+    }
+    .box-pu li .run span,
+    .box-pu li .finish span {
+        filter: grayscale(1);
+    }
+    .sbOptions,
+    .sbSelector {
+        background-color: #3a3a3a;
+        color: white;
+        filter: grayscale(1);
+    }
+    .sbOptions a:hover,
+    .sbOptions a:focus,
+    .sbOptions a.sbFocus {
+        background: #444;
+    }
+    .sbOptions a:link,
+    .sbOptions a:visited {
+        color: white;
+    }
 
-#box-all-slots {
-    background: #2b2b2b;
-}
-.radio-selector li input[type="radio"]:checked + label span {
-    color: #fff;
-    text-align: center;
-}
-.radio-selector li input[type="radio"]:checked + label span::after {
-    content: "✓";
-    font-size: 1.25em;
-    margin: 0;
-}
-.ui-slider .ui-slider-handle {
-    background-color: #666 !important;
-    border-color: #666 !important;
-}
-.ui-slider .ui-slider-handle:hover,
-.ui-slider .ui-slider-handle:focus {
-    background-color: #777 !important;
-    border-color: #777 !important;
-}
-.ui-widget-header {
-    background-color: #28e !important;
-}
-.ui-slider-horizontal {
-    background: #c60 !important;
-}
-#btn-stop {
-    background: #911;
-}
-#btn-stop:hover {
-    background-color: #a11;
-}
+    #box-all-slots {
+        background: #2b2b2b;
+    }
+    .radio-selector li input[type="radio"]:checked + label span {
+        color: #fff;
+        text-align: center;
+    }
+    .radio-selector li input[type="radio"]:checked + label span::after {
+        content: "✓";
+        font-size: 1.25em;
+        margin: 0;
+    }
+    .ui-slider .ui-slider-handle {
+        background-color: #666 !important;
+        border-color: #666 !important;
+    }
+    .ui-slider .ui-slider-handle:hover,
+    .ui-slider .ui-slider-handle:focus {
+        background-color: #777 !important;
+        border-color: #777 !important;
+    }
+    .ui-widget-header {
+        background-color: #28e !important;
+    }
+    .ui-slider-horizontal {
+        background: #c60 !important;
+    }
+    #btn-stop {
+        background: #911;
+    }
+    #btn-stop:hover {
+        background-color: #a11;
+    }
 
-.ui-dialog.ui-widget-overlay {
-    background-color: black;
-}
-.ui-dialog.ui-widget-content.ui-draggable .ui-dialog-titlebar {
-    cursor: default;
-}
-.ui-dialog.ui-widget-content .ui-widget-header .ui-dialog-titlebar-close {
-    background: none;
-    border: 0;
-}
-.ui-dialog.ui-widget-content .ui-widget-header .ui-dialog-titlebar-close .ui-icon {
-    filter: invert(1) brightness(2);
-}
-.ui-dialog.ui-widget-content {
-    width: 100% !important;
-    top: 0 !important;
-    left: 0 !important;
-    height: 100% !important;
-    padding: 0;
-    position: fixed;
-    border: 0;
-    background: #222;
-}
-.ui-dialog .ui-widget-content {
-    color: white;
-}
-.ui-dialog .ui-widget-content h2 {
-    font-size: 1.1em;
-    background: #28e;
-    padding: 0 1em;
-    color: white;
-    position: fixed;
-    top: 0.4em;
-    left: 0;
-}
-.ui-dialog .ui-widget-content .green.button.done {
-    display: none;
-}
-.ui-widget-content a {
-    color: #5ba0b7;
-}
+    .ui-dialog.ui-widget-overlay {
+        background-color: black;
+    }
+    .ui-dialog.ui-widget-content.ui-draggable .ui-dialog-titlebar {
+        cursor: default;
+    }
+    .ui-dialog.ui-widget-content .ui-widget-header .ui-dialog-titlebar-close {
+        background: none;
+        border: 0;
+    }
+    .ui-dialog.ui-widget-content .ui-widget-header .ui-dialog-titlebar-close .ui-icon {
+        filter: invert(1) brightness(2);
+    }
+    .ui-dialog.ui-widget-content {
+        width: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+        height: 100% !important;
+        padding: 0;
+        position: fixed;
+        border: 0;
+        background: #222;
+    }
+    .ui-dialog .ui-widget-content {
+        color: white;
+    }
+    .ui-dialog .ui-widget-content h2 {
+        font-size: 1.1em;
+        background: #28e;
+        padding: 0 1em;
+        color: white;
+        position: fixed;
+        top: 0.4em;
+        left: 0;
+    }
+    .ui-dialog .ui-widget-content .green.button.done {
+        display: none;
+    }
+    .ui-widget-content a {
+        color: #5ba0b7;
+    }
 }
