@@ -7,155 +7,6 @@
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-FoldingAtHome/master/style.user.css
 @license       CC-BY-SA-4.0
 ==/UserStyle== */
-@-moz-document url("https://client.foldingathome.com"),
-domain("127.0.0.1") {
-    /*
-        Dependency
-        Folding@Home Client Light by Mondanzo (https://userstyles.org/styles/181613/folding-home-client-light)
-    */
-    #cp.panel {
-        border: none;
-        box-shadow: none;
-        width: auto;
-        border-radius: 0;
-        padding-bottom: 4px;
-    }
-
-    #cp #menu {
-        margin: 0 25px;
-        width: 95%;
-    }
-
-    a.btn {
-        border-radius: 0;
-        height: 100%;
-    }
-
-    .td.right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header {
-        background-color: #e4e4e9;
-        width: auto;
-    }
-
-    body {
-        background: #eeeeee;
-    }
-
-    .box-pu li {
-        border-radius: 0;
-    }
-
-    #slots.row.panel-pu {
-        padding: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #slots.row.panel-pu ul {
-        width: 100%;
-        display: flex;
-    }
-
-    #slots.row.panel-pu li {
-        background: #e4e4e4;
-        margin-left: 8px;
-    }
-
-    #slots.row.panel-pu li:last-child {
-        margin-right: 8px;
-    }
-
-    #slots.row.panel-pu li.active {
-        background: #fff;
-    }
-
-    #btn-stop {
-        border-radius: 0;
-        border: none;
-        background: #c55;
-    }
-
-    .box-pu li .circle {
-        border-radius: 50%;
-        border: none;
-    }
-
-    .box-pu li .circle.pause {
-        background: #fcfc3c;
-    }
-
-    .box-pu li .circle.run {
-        background: #4c4;
-    }
-
-    .sbHolder,
-    .sbSelector {
-        box-shadow: none;
-        border-radius: 0;
-    }
-
-    .ui-widget-header {
-        background-image: none !important;
-        background-color: #5af !important;
-        border: none;
-        border-radius: 0;
-    }
-
-    .ui-progressbar .ui-progressbar-value {
-        margin: 0;
-    }
-
-    .ui-widget-content {
-        border: solid 1px #ccc;
-        border-radius: 0;
-    }
-
-    .ui-slider-horizontal {
-        background: #f90 !important;
-    }
-
-    .ui-slider .ui-slider-handle {
-        background-image: none !important;
-        border: solid 1px #000 !important;
-        border-radius: 5px;
-        background-color: #000 !important;
-        width: 6px;
-        margin-left: -4.5px !important;
-        height: 25px;
-    }
-
-    .ui-slider .ui-slider-handle:hover,
-    .ui-slider .ui-slider-handle:focus {
-        background-image: none !important;
-        border: solid 1px #222 !important;
-        border-radius: 5px;
-        background-color: #222 !important;
-        cursor: pointer;
-    }
-
-    .radio-selector span {
-        background-image: none !important;
-        border-radius: 0;
-        border: solid 1px #ccc;
-    }
-
-    .radio-selector li input[type="radio"]:checked + label span {
-        color: #000;
-    }
-
-    .radio-selector li input[type="radio"]:checked + label span::after {
-        content: "✓";
-        font-size: 1.6em;
-        margin: -2px 4px 4px;
-    }
-}
-
 @-moz-document url("https://client.foldingathome.org/"),
 url-prefix("http://127.0.0.1:7396") {
     /*
@@ -338,7 +189,8 @@ url-prefix("http://127.0.0.1:7396") {
         border: 0;
         background: #222;
     }
-    .ui-dialog .ui-widget-content {
+    .ui-dialog .ui-widget-content,
+    .ui-dialog .ui-dialog-title {
         color: white;
     }
     .ui-dialog .ui-widget-content h2 {
@@ -358,5 +210,88 @@ url-prefix("http://127.0.0.1:7396") {
     }
     .ui-widget-content a {
         color: #5ba0b7;
+    }
+
+
+
+    /*
+        Dependency
+        Folding@Home Client Light by Mondanzo (https://userstyles.org/styles/181613/folding-home-client-light)
+    */
+    #cp.panel {
+        border: none;
+        box-shadow: none;
+        width: auto;
+        border-radius: 0;
+        padding-bottom: 4px;
+    }
+
+    .box-pu li {
+        border-radius: 0;
+    }
+
+    #slots.row.panel-pu ul {
+        width: 100%;
+        display: flex;
+    }
+
+    #slots.row.panel-pu li {
+        margin-left: 8px;
+    }
+
+    #slots.row.panel-pu li:last-child {
+        margin-right: 8px;
+    }
+
+    #btn-stop {
+        border-radius: 0;
+        border: none;
+    }
+
+    .box-pu li .circle {
+        border-radius: 50%;
+        border: none;
+    }
+
+    .sbHolder,
+    .sbSelector {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .ui-widget-header {
+        background-image: none !important;
+        border: none;
+        border-radius: 0;
+    }
+
+    .ui-progressbar .ui-progressbar-value {
+        margin: 0;
+    }
+
+    .ui-widget-content {
+        border: solid 1px #ccc;
+        border-radius: 0;
+    }
+
+    .ui-slider .ui-slider-handle {
+        background-image: none !important;
+        border-radius: 5px;
+        width: 6px;
+        margin-left: -4.5px !important;
+        height: 25px;
+    }
+
+    .ui-slider .ui-slider-handle:hover,
+    .ui-slider .ui-slider-handle:focus {
+        background-image: none !important;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .radio-selector span {
+        background-image: none !important;
+        border-radius: 0;
+        border: solid 1px #ccc;
     }
 }
