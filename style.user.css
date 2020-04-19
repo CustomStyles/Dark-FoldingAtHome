@@ -266,6 +266,19 @@ url-prefix("http://127.0.0.1:7396") {
     a:visited {
         color: #39a;
     }
+    button,
+    input,
+    select {
+        border: none;
+        padding: 0.25em 1em;
+        background: #444;
+        color: #aaa;
+        border-radius: 0.5em;
+    }
+    input,
+    select {
+        border-radius: 2px;
+    }
     #header a.title span {
         color: #ff7668;
     }
