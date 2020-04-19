@@ -2,98 +2,15 @@
 @name          Dark Folding@Home
 @namespace     EvanG
 @author        EvanG
-@version       2020.4.18
+@version       2020.4.19
 @homepageURL   https://github.com/CustomStyles/Dark-FoldingAtHome/
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-FoldingAtHome/master/style.user.css
 @license       CC-BY-SA-4.0
 ==/UserStyle== */
-@-moz-document url("https://client.foldingathome.com"),
-domain("127.0.0.1") {
-    /*
-        Dependency
-        Folding@Home Client Light by Mondanzo (https://userstyles.org/styles/181613/folding-home-client-light)
-    */
-    #cp.panel {
-        border: none;
-        box-shadow: none;
-        width: auto;
-        border-radius: 0;
-        padding-bottom: 4px;
-    }
-
-    .box-pu li {
-        border-radius: 0;
-    }
-
-    #slots.row.panel-pu ul {
-        width: 100%;
-        display: flex;
-    }
-
-    #slots.row.panel-pu li {
-        margin-left: 8px;
-    }
-
-    #slots.row.panel-pu li:last-child {
-        margin-right: 8px;
-    }
-
-    #btn-stop {
-        border-radius: 0;
-        border: none;
-    }
-
-    .box-pu li .circle {
-        border-radius: 50%;
-        border: none;
-    }
-
-    .sbHolder,
-    .sbSelector {
-        box-shadow: none;
-        border-radius: 0;
-    }
-
-    .ui-widget-header {
-        background-image: none !important;
-        border: none;
-        border-radius: 0;
-    }
-
-    .ui-progressbar .ui-progressbar-value {
-        margin: 0;
-    }
-
-    .ui-widget-content {
-        border: solid 1px #ccc;
-        border-radius: 0;
-    }
-
-    .ui-slider .ui-slider-handle {
-        background-image: none !important;
-        border-radius: 5px;
-        width: 6px;
-        margin-left: -4.5px !important;
-        height: 25px;
-    }
-
-    .ui-slider .ui-slider-handle:hover,
-    .ui-slider .ui-slider-handle:focus {
-        background-image: none !important;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .radio-selector span {
-        background-image: none !important;
-        border-radius: 0;
-        border: solid 1px #ccc;
-    }
-}
 @-moz-document url("https://client.foldingathome.org/"),
 url-prefix("http://127.0.0.1:7396") {
     /*
-		Dark Folding@Home (2020-04-18)
+		Dark Folding@Home (2020-04-19)
 
 		Repository: https://github.com/CustomStyles/Dark-FoldingAtHome
 					You are free to contribute or report any problems with the style.
@@ -119,6 +36,7 @@ url-prefix("http://127.0.0.1:7396") {
     #loading #throbber img {
         filter: invert(0.9);
     }
+
     #cp #menu {
         color: #ddd;
         margin: 0px 40px;
@@ -148,15 +66,52 @@ url-prefix("http://127.0.0.1:7396") {
         padding: 0.25em 0.5em;
     }
 
+    #cp.panel {
+        border: none;
+        box-shadow: none;
+        width: auto;
+        border-radius: 0;
+        padding-bottom: 4px;
+        background: #333;
+        color: white;
+        flex: 1;
+        margin: 0;
+    }
     #cp .panel-header,
     #cp .panel-top,
     #cp .panel-pu,
     #slots.row.panel-pu li {
         background: #2d2d2d;
     }
+    #slots.row.panel-pu ul {
+        display: flex;
+    }
+    #slots.row.panel-pu li {
+        margin-left: 8px;
+    }
+    #slots.row.panel-pu li:last-child {
+        margin-right: 8px;
+    }
     #cp .panel-header {
         padding: 1em 0;
     }
+    .sbOptions,
+    .sbSelector {
+        background-color: #3a3a3a;
+        color: white;
+        filter: grayscale(1);
+        box-shadow: none;
+    }
+    .sbOptions a:hover,
+    .sbOptions a:focus,
+    .sbOptions a.sbFocus {
+        background: #444;
+    }
+    .sbOptions a:link,
+    .sbOptions a:visited {
+        color: white;
+    }
+
     #slots.row.panel-pu li.active {
         background: #333;
         border-radius: 25px 25px 0 0;
@@ -171,19 +126,17 @@ url-prefix("http://127.0.0.1:7396") {
         font-size: small;
         line-height: 1.175;
         padding: 0;
-        text-indent: 5px;
-    }
-    #cp.panel {
-        background: #333;
-        color: white;
-        flex: 1;
         margin: 0;
+        text-indent: 5px;
     }
     #cp .hlarge {
         color: #db003e;
     }
     .box-pu li .pu .pu-type {
         color: #ccc;
+    }
+    .box-pu li .circle {
+        border: none;
     }
     .box-pu li .circle.run {
         background: #2b2;
@@ -198,24 +151,14 @@ url-prefix("http://127.0.0.1:7396") {
     .box-pu li .finish span {
         filter: grayscale(1);
     }
-    .sbOptions,
-    .sbSelector {
-        background-color: #3a3a3a;
-        color: white;
-        filter: grayscale(1);
-    }
-    .sbOptions a:hover,
-    .sbOptions a:focus,
-    .sbOptions a.sbFocus {
-        background: #444;
-    }
-    .sbOptions a:link,
-    .sbOptions a:visited {
-        color: white;
-    }
 
     #box-all-slots {
         background: #2b2b2b;
+    }
+    .radio-selector span {
+        background-image: none !important;
+        border-radius: 0;
+        border: solid 1px #ccc;
     }
     .radio-selector li input[type="radio"]:checked + label span {
         color: #fff;
@@ -228,12 +171,20 @@ url-prefix("http://127.0.0.1:7396") {
     }
     .ui-slider .ui-slider-handle {
         background-color: #666 !important;
+        background-image: none !important;
         border-color: #666 !important;
+        border-radius: 5px;
+        width: 6px;
+        margin-left: -4.5px !important;
+        height: 25px;
     }
     .ui-slider .ui-slider-handle:hover,
     .ui-slider .ui-slider-handle:focus {
         background-color: #777 !important;
+        background-image: none !important;
         border-color: #777 !important;
+        border-radius: 5px;
+        cursor: pointer;
     }
     .ui-widget-header {
         background-color: #28e !important;
@@ -242,12 +193,18 @@ url-prefix("http://127.0.0.1:7396") {
         background: #c60 !important;
     }
     #btn-stop {
+        border: none;
         background: #911;
     }
     #btn-stop:hover {
         background-color: #a11;
     }
 
+    .ui-widget-header {
+        background-image: none !important;
+        border: none;
+        border-radius: 0;
+    }
     .ui-dialog.ui-widget-overlay {
         background-color: black;
     }
