@@ -191,6 +191,7 @@ url-prefix("http://127.0.0.1:7396") {
     }
     .ui-slider-horizontal {
         background: #c60 !important;
+        border-radius: 0;
     }
     #btn-stop {
         border: none;
