@@ -7,15 +7,15 @@
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-FoldingAtHome/master/style.user.css
 @license       CC-BY-SA-4.0
 ==/UserStyle== */
+/*
+	Dark Folding@Home (2020-04-19)
+
+	Repository: https://github.com/CustomStyles/Dark-FoldingAtHome
+				You are free to contribute or report any problems with the style.
+	License:	https://creativecommons.org/licenses/by-sa/4.0/
+*/
 @-moz-document url("https://client.foldingathome.org/"),
 url-prefix("http://127.0.0.1:7396") {
-    /*
-		Dark Folding@Home (2020-04-19)
-
-		Repository: https://github.com/CustomStyles/Dark-FoldingAtHome
-					You are free to contribute or report any problems with the style.
-		License:	https://creativecommons.org/licenses/by-sa/4.0/
-    */
     body {
         min-height: 100vh;
         display: flex;
@@ -252,5 +252,80 @@ url-prefix("http://127.0.0.1:7396") {
     }
     .ui-widget-content a {
         color: #5ba0b7;
+    }
+}
+
+@-moz-document url-prefix("https://stats.foldingathome.org/") {
+    html {
+        background: #222;
+    }
+    body {
+        color: gray;
+    }
+    a,
+    a:visited {
+        color: #39a;
+    }
+    #header a.title span {
+        color: #ff7668;
+    }
+
+    #menu {
+        display: flex;
+        padding: 0;
+    }
+    #menu > li {
+        flex: 1;
+        background: #3a3a3a;
+        border-radius: 0;
+        border: none;
+    }
+    #menu > li:hover,
+    #menu > li:focus {
+        background: #333;
+        opacity: 1;
+    }
+    #menu > li:hover a,
+    #menu > li:focus a {
+        color: white;
+    }
+
+    #content {
+        background-color: #333;
+        padding: 0 2em 1em;
+    }
+    #content h1 {
+        color: #ccc;
+        margin: 0.5em 0 0;
+    }
+    #content table {
+        background: none !important;
+        width: 100% !important;
+        color: gray;
+    }
+    #content table.team-info tr > *,
+    #content table.donor-info tr > *,
+    #content table.donor-team tr > * {
+        width: 50%;
+    }
+    #content table.results {
+        border-spacing: 0;
+    }
+    #content table.results th,
+    #content table.results tr.description td {
+        background: #444 !important;
+        border: none !important;
+    }
+    #content table.results tr.description td:empty {
+        display: none;
+    }
+    #content table.results td {
+        border: none !important;
+    }
+    #content table.results :nth-child(2n) > td {
+        background-color: #373737 !important;
+    }
+    #content table.results :nth-child(2n + 1) > td {
+        background-color: #3a3a3a !important;
     }
 }
