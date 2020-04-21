@@ -72,6 +72,8 @@ url-prefix("http://127.0.0.1:7396") {
     .button,
     button {
         background: none;
+    }
+    button {
         padding: 0px 26px 2px;
         min-height: 36px;
         color: #fff !important;
@@ -79,6 +81,9 @@ url-prefix("http://127.0.0.1:7396") {
         font-size: 24px;
         border-radius: 0.3em;
         cursor: pointer;
+    }
+    .ui-dialog.ui-widget-content .ui-widget-header .ui-dialog-titlebar-close {
+        min-height: 0;
     }
     .button.red,
     #btn-stop {
