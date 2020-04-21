@@ -2,13 +2,13 @@
 @name          Dark Folding@Home
 @namespace     EvanG
 @author        EvanG
-@version       2020.4.19
+@version       2020.4.21
 @homepageURL   https://github.com/CustomStyles/Dark-FoldingAtHome/
 @updateURL     https://raw.githubusercontent.com/CustomStyles/Dark-FoldingAtHome/master/style.user.css
 @license       CC-BY-SA-4.0
 ==/UserStyle== */
 /*
-	Dark Folding@Home (2020-04-19)
+	Dark Folding@Home (2020-04-21)
 
 	Repository: https://github.com/CustomStyles/Dark-FoldingAtHome
 				You are free to contribute or report any problems with the style.
@@ -35,6 +35,10 @@ url-prefix("http://127.0.0.1:7396") {
     }
     #loading #throbber img {
         filter: invert(0.9);
+    }
+    #upgrade {
+        background: #333;
+        color: white;
     }
 
     #cp #menu {
@@ -64,6 +68,52 @@ url-prefix("http://127.0.0.1:7396") {
     .ui-dialog .ui-dialog-buttonpane button {
         color: white;
         padding: 0.25em 0.5em;
+    }
+    .button,
+    button {
+        background: none;
+        padding: 0px 26px 2px;
+        height: 36px;
+        color: #fff !important;
+        font-family: Oswald, Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        border-radius: 0.3em;
+        cursor: pointer;
+    }
+    .button.red,
+    #btn-stop {
+        border: none;
+        background: #911;
+    }
+    .button.red:hover,
+    #btn-stop:hover {
+        background-color: #a11;
+        border: none;
+    }
+    .button.green {
+        border: none;
+        background-color: #183;
+    }
+    .button.green:hover {
+        border: none;
+        background-color: #294;
+    }
+    .button.grey,
+    button {
+        border: none;
+        background: #444;
+    }
+    .button.grey:hover,
+    button {
+        border: none;
+        background: #4a4a4a;
+    }
+    input {
+        border: none !important;
+        padding: 0.25em 1em !important;
+        background: #444 !important;
+        color: white !important;
+        border-radius: 0.5em;
     }
 
     #cp.panel {
@@ -170,9 +220,8 @@ url-prefix("http://127.0.0.1:7396") {
         margin: 0;
     }
     .ui-slider .ui-slider-handle {
-        background-color: #666 !important;
+        background-color: #999 !important;
         background-image: none !important;
-        border-color: #666 !important;
         border-radius: 5px;
         width: 6px;
         margin-left: -4.5px !important;
@@ -180,25 +229,17 @@ url-prefix("http://127.0.0.1:7396") {
     }
     .ui-slider .ui-slider-handle:hover,
     .ui-slider .ui-slider-handle:focus {
-        background-color: #777 !important;
+        background-color: #8c8c8c !important;
         background-image: none !important;
-        border-color: #777 !important;
-        border-radius: 5px;
         cursor: pointer;
     }
     .ui-widget-header {
         background-color: #28e !important;
     }
     .ui-slider-horizontal {
-        background: #c60 !important;
+        background: #d71 !important;
         border-radius: 0;
-    }
-    #btn-stop {
         border: none;
-        background: #911;
-    }
-    #btn-stop:hover {
-        background-color: #a11;
     }
 
     .ui-widget-header {
@@ -235,6 +276,7 @@ url-prefix("http://127.0.0.1:7396") {
     }
     .ui-dialog .ui-widget-content {
         color: white;
+        max-height: 100% !important;
     }
     .ui-dialog .ui-widget-content h2 {
         font-size: 1.1em;
