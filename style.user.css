@@ -73,7 +73,7 @@ url-prefix("http://127.0.0.1:7396") {
     button {
         background: none;
         padding: 0px 26px 2px;
-        height: 36px;
+        min-height: 36px;
         color: #fff !important;
         font-family: Oswald, Arial, Helvetica, sans-serif;
         font-size: 24px;
